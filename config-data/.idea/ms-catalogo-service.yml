@@ -19,5 +19,9 @@ spring:
     username: root
     password:
 
-spring.config.import:
-  - configserver:
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8090/eureka
+  instance:
+    hostname: localhost
