@@ -1,7 +1,5 @@
-
 server:
   port: 7070
-
 
 spring:
   application:
@@ -16,8 +14,6 @@ spring:
           #username:
           #password:
 
-
-security:
-  user:
-    name: root
-    password: 123456
+config:
+  import:
+    - configserver:
